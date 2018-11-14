@@ -1,7 +1,7 @@
 cls
 @ECHO OFF
 ECHO. ##################################################################
-ECHO. ###################### C++ COMPILER HELPER #######################
+ECHO. ###################### CMD COMPILER HELPER #######################
 ECHO. ################# Developer: github @sharadcodes #################
 ECHO.
 
@@ -14,7 +14,13 @@ ECHO. ----------------------- It's a Python File ----------------------- )
 
 ECHO. Source file name: %~n1
 ECHO. Source path     : %~f1
-ECHO. Source binary   : %~dp1%~n1.exe
+
+if %~x1%==.cpp (
+ECHO. Source binary   : %~dp1%~n1.exe 
+)
+if %~x1%==.c (
+ECHO. Source binary   : %~dp1%~n1.exe 
+)
 
 ECHO.
 ECHO. ############################ OUTPUT ##############################
