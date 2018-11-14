@@ -34,6 +34,23 @@ python %~f1
 
 ECHO.
 ECHO.
+ECHO. ##################################################################
 ECHO.
+ECHO. -------------------- SELECT OPTIONS FROM BELOW -------------------
+ECHO. 
+ECHO. 1: COPY OUTPUT TO FILE
+ECHO. 2: EXIT
 ECHO.
+ECHO. ##################################################################
+ECHO.
+ECHO ENTER YOUR CHOICE
+set /p choice=
+ECHO. ##################################################################
+if %choice%==1 goto copytofile 
+if %choice%==2 goto terminate 
+:copytofile
+%~n1.exe > %~f1.txt
+echo. COPIED SUCCESSFULLY !
+goto terminate
+:terminate
 pause
