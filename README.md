@@ -2,8 +2,13 @@
 A batch file for which can be used for running C++ and C programs directly from the NOTEPAD ++ or the Command Prompt in Windows.
 
 ## BEFOR USE
-* Save the file in the `C:\` directory and then add the path to the environment variable of yout pc.
+* Save the file in the `C:\` directory and then add the path to the environment variable of your pc.
 
+## REQUIREMENTS
+* g++ installed
+
+## DEPENDENCY
+* Windows
 ## USAGE 
 
 ```
