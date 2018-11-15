@@ -7,7 +7,7 @@ A batch file for which can be used for running C++ and C programs directly from 
 ## REQUIREMENTS
 * MinGW
 * g++
-*gcc
+* gcc
 
 ## DEPENDENCY
 * Windows
