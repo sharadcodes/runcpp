@@ -5,7 +5,9 @@ A batch file for which can be used for running C++ and C programs directly from 
 * Save the file in the `C:\` directory and then add the path to the environment variable of your pc.
 
 ## REQUIREMENTS
-* g++ installed
+* MinGW
+* g++
+*gcc
 
 ## DEPENDENCY
 * Windows
